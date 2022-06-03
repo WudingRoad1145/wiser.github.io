@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+ 
+    <head>
+        <title>
+            MVP Student Performance Tracking System
+        </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+ 
+    <body>
+ 
+        <h1><center>Wiser School Student System</center></h1>
+        <hr>
+        <div class="student-form">
+            <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                <div>
+                    <label>Full Name*</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                    <input type="text" name="fullName" id="fullName">
+                </div>
+                <div>
+                    <label>Student Id</label>
+                    <input type="text" name="studentID" id="studentID">
+                </div>
+                <div>
+                    <label>Form</label>
+                    <input type="text" name="form" id="form">
+                </div>
+                <div>
+                    <label>Result</label>
+                    <input type="text" name="result" id="result">
+                </div>
+                <div  class="form-action-buttons">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+        <br/>
+        <div class = "students-table">
+            <table class="list" id="studentList">
+                <thead>
+                    <tr>
+                        <th>Full Name</th>
+                        <th>Student Id</th>
+                        <th>Form</th>
+                        <th>Result</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+ 
+                </tbody>
+            </table>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
